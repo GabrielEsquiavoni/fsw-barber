@@ -3,7 +3,6 @@ import Header from "./_components/header"
 import { Input } from "./_components/ui/input"
 import { Button } from "./_components/ui/button"
 import Image from "next/image"
-import { Card, CardContent } from "./_components/ui/card"
 import { db } from "./_lib/prisma"
 import BarbershopItem from "./_components/barbershop-item"
 import { quickSearchOptions } from "./_constants/search"
@@ -53,7 +52,7 @@ const Home = async () => {
         <div className="relative h-[150px] w-full">
           <Image
             alt="Agende nos melhores com FSW Barber"
-            src="banner-01.png"
+            src="/banner-01.png"
             fill
             className="rounded-xl object-cover"
           />
@@ -83,16 +82,6 @@ const Home = async () => {
           ))}
         </div>
       </div>
-
-      <footer>
-        <Card>
-          <CardContent className="px-5 pt-6">
-            <p className="text-sm text-gray-400">
-              © 2025 Copyright <span className="font-bold">FSW Barber</span>
-            </p>
-          </CardContent>
-        </Card>
-      </footer>
     </div>
   )
 }
