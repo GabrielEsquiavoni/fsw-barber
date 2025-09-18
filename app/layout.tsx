@@ -21,10 +21,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex h-full flex-col">
           <div className="flex-1">{children}</div>
+          <Footer />
         </div>
 
         <Toaster />
-        <Footer />
       </body>
     </html>
   )
