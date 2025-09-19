@@ -79,7 +79,7 @@ const BarbershopPage = async ({ params }: BarbershopPageProps) => {
         </div>
 
         <div className="flex-items-center gap-2">
-          <StarIcon className="text-primary fill-primary" size={18} />
+          <StarIcon className="fill-primary text-primary" size={18} />
           <p className="text-sm">5,0 (499 avaliações)</p>
         </div>
       </div>
