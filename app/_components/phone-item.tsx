@@ -11,8 +11,9 @@ interface PhoneItemProps {
 const PhoneItem = ({ phone }: PhoneItemProps) => {
   const handleCopyPhoneClick = (phone: string) => {
     navigator.clipboard.writeText(phone)
-    toast.success("Número copiado com sucesso!")
+    toast.success("Telefone copiado com sucesso!")
   }
+
   return (
     <div className="flex justify-between" key={phone}>
       {/* ESQUERDA */}
